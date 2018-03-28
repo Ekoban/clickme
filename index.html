@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Click Me!</title>
+	<link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.1/css/tachyons.min.css"/>
+<!-- Style based on Tachyon classes: check http://tachyons.io -->
+</head>
+<body>
+	<div class='pack measure garamond'>
+			<input 	id="counter" 
+					class='b counting tc bg-lightest-blue fl w-100 br1 ba b--light-gray' 
+					value="0" 
+					/>
+		<div class="buttons tc bn">	
+			<button  	id="minus" 
+						class='fl w-50 bg-blue bn br--left dim washed-blue hover-dark-blue bg-animate hover-bg-lightest-blue' 
+						onclick="add(-1);"
+						> - </button>
+			<button 	id="plus" 
+						class='fl w-50 bg-blue bn br--right dim washed-blue hover-dark-blue bg-animate hover-bg-lightest-blue' 
+						onclick="add(1);"
+						> + </button>
+		</div>
+		<button 	class='reset tc fl w-100 bg-dark-blue bn br1 dim washed-blue pointer' 
+					onclick="reset();"
+					> Reset counter </button>
+	
+	</div>
+	<script type="text/javascript" src="./clickme.js"></script>
+</body>
+</html>
