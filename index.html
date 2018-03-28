@@ -6,21 +6,30 @@
 <!-- Style based on Tachyon classes: check http://tachyons.io -->
 </head>
 <body>
-	<div class='pack measure garamond fl w-60 pa2'>
+	<div class='pack measure fl w-60 pa2'>
 		<input 	id="counter" 
 				class='b bn counting tc bg-lightest-blue fl w-100 br1' 
 				value="0" 
 				/>
-		<div class="buttons tc bn">	
-			<button  	id="minus" 
-						class='fl w-50 bg-blue bn br--left dim washed-blue hover-dark-blue bg-animate hover-bg-lightest-blue' 
+		<div class="buttons b tc bn">	
+			<div  	id="minusten" 
+						class='br--bottom fl w-25 bg-blue dim washed-blue hover-dark-blue bg-animate hover-bg-lightest-blue' 
+						onclick="add(-10);"
+						> -10 </div>
+			<div  		id="minus" 
+						class='br--bottom fl w-25 bg-blue dim washed-blue hover-dark-blue bg-animate hover-bg-lightest-blue' 
 						onclick="add(-1);"
-						> - </button>
-			<button 	id="plus" 
-						class='fl w-50 bg-blue bn br--right dim washed-blue hover-dark-blue bg-animate hover-bg-lightest-blue' 
+						> -1 </div>
+			<div 		id="plus" 
+						class='br--bottom fl w-25 bg-blue dim washed-blue hover-dark-blue bg-animate hover-bg-lightest-blue' 
 						onclick="add(1);"
-						> + </button>
+						> +1 </div>
+			<div 		id="plusten" 
+						class='br--bottom fl w-25 bg-blue dim washed-blue hover-dark-blue bg-animate hover-bg-lightest-blue' 
+						onclick="add(10);"
+						> +10 </div>
 		</div>
+
 		<button 	class='reset tc fl w-100 bg-dark-blue bn br1 dim washed-blue pointer' 
 					onclick="reset();"
 					> Reset counter </button>
